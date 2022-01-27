@@ -1,5 +1,12 @@
-import pyttsx3
+from gtts import gTTS
+import os
 
-engine = pyttsx3.init()
-engine.say('This is a python example in MEDIUM')
-engine.runAndWait()
+mytext = "Ewa chce komputer, który gada"
+
+language = 'pl'
+
+myobj = gTTS(text=mytext, lang=language, slow=False)
+
+myobj.save("welcome.mp3")
+
+os.system("/home/daniel/PycharmProjects/myprojects/welcome.mp3")
