@@ -1,4 +1,4 @@
-from fakecreditentials import Faker
+from faker import Faker
 
 fake = Faker()
 
